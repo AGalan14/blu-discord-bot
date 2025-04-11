@@ -1,0 +1,8 @@
+{
+  "commands": {
+    "ping": {
+      "description": "Comprobar latencia del bot",
+      "response": "🏓 ¡Pong! Latencia: {latency}ms"
+    }
+  }
+}
