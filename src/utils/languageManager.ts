@@ -50,7 +50,7 @@ export class LanguageManager {
 
   public t(
     interaction: ChatInputCommandInteraction,
-    key: string,
+    key: I18nPath,
     variables?: Record<string, any>
   ): string {
     const baseLang = this.getBaseLanguage(interaction.locale);

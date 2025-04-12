@@ -1,17 +1,22 @@
 {
   "compilerOptions": {
-    "target": "ES6",
+    "target": "ES2022",
     "module": "CommonJS",
-    "outDir": "./dist",
     "rootDir": "./src",
-    "strict": true,
+    "outDir": "./dist",
     "esModuleInterop": true,
+    "strict": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
     "moduleResolution": "node",
     "baseUrl": ".",
     "paths": {
       "@commands/*": ["./src/commands/*"],
       "@events/*": ["./src/events/*"],
       "@locales/*": ["./src/locales/*"]
-    }
+    },
+    "resolveJsonModule": true,
+    "types": ["./src/types/i18n"],
   }
 }

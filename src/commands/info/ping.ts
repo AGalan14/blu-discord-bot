@@ -11,7 +11,7 @@ export default {
     const client = interaction.client as ExtendedClient;
     const latency = Math.abs(Date.now() - interaction.createdTimestamp);
 
-    const response = client.lang!.t(interaction, "commands.ping.response", {
+    const response = client.lang!.t(interaction, "commands.info.ping.response", {
       latency: latency,
     });
 
